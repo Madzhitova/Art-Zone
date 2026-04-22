@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/tutorial.css">
+
+<title>Туториалы | Art Zone</title>
+
+</head>
+<body>
+    <!--Навигация-->
+    <header>
+        <div class="logo">
+            <img id="logoimg" src="../img/logo.png">
+            <span>Art Zone</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="tutorial.html">Туториалы</a>
+            <a href="art.html">Рисование</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+<div class="top-bar">
+    <h1>Туториалы</h1>
+    <a href="add.html" class="add-btn">+ Добавить</a>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<!-- VIEWER -->
+<div class="viewer" id="viewer">
+
+    <!-- ЛЕВО -->
+    <div class="viewer-left">
+
+        <span class="close" onclick="closeViewer()">✕</span>
+
+        <img id="viewerImg">
+
+        <div id="viewerVideo"></div>
+
+        <div class="media-controls">
+            <button onclick="showImage()">Фото</button>
+            <button onclick="showVideo()">Видео</button>
+        </div>
+
+    </div>
+
+    <!-- ПРАВО -->
+    <div class="viewer-right">
+        <h2 id="viewerTitle"></h2>
+        <p id="viewerText"></p>
+        <button onclick="deleteItem()" class="delete-btn">Удалить</button>
+    </div>
+
+</div>
+
+    <!--footer-->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+        <h3>Art Zone</h3>
+        <p>Твори, вдохновляйся и делись своим искусством!</p>
+        </div>
+        <div class="footer-center">
+        <h4>Навигация</h4>
+        <a href="../index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="tutorial.html">Туториалы</a>
+        <a href="art.html">Рисование</a>
+        </div>
+        <div class="footer-right">
+        <h4>Мы в соцсетях</h4>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">VK</a>
+        <a href="#" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Art Zone. Все права защищены.
+    </div>
+    </footer>
+
+
+    <script src="../js/tutorial.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

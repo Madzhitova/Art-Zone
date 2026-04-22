@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Art Zone</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Навигация-->
+    <header>
+        <div class="logo">
+            <img id="logoimg" src="img/logo.png">
+            <span>Art Zone</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="html/about.html">О нас</a>
+            <a href="html/tutorial.html">Туториалы</a>
+            <a href="html/art.html">Рисование</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!--Блок1 -->
+    <section class="hero">
+        <div class="left">
+            <h1>Ваш Арт-Поток</h1>
+            <p> 
+                Место, где рождаются идеи.  
+                Создавайте арты, делитесь вдохновением  
+                и находите новые техники.
+            </p>
+        </div>
+
+        <div class="right">
+            <img src="img/heroImg.jpg">
+        </div>
+    </section>
+
+    <!--Лента двигающая -->
+    <div class="marquee">
+    <div class="marquee-content" id="marquee">
+        Арт от профи ✦ Бесконечный поток идей ✦ Место для творчества ✦ Art Zone ✦
+        Арт от профи ✦ Бесконечный поток идей ✦ Место для творчества ✦ Art Zone ✦
+    </div>
+    </div>
+
+    <!--Блок2 -->
+    <section class="create-section">
+        <div class="create-overlay">
+            <h1>Пора творить!</h1>
+            <button class="join-btn" onclick="window.location.href='html/art.html'">
+                Творить
+            </button>
+        </div>
+    </section>
+
+    <!--Карточка курсы -->
+    <section class="courses">
+        <h2>Мои курсы</h2>
+
+        <button id="addCourse" class="add-btn">Добавить курс</button>
+        <div id="courseList" class="course-list">
+            <div class="course-card">
+                <h3>Основы рисования</h3>
+                <p>Категория: Базовый</p>
+                <label>
+                    <input type="checkbox" class="complete">
+                    Пройдено
+                </label>
+                <div class="course-buttons">
+                    <a href="https://youtube.com" target="_blank" class="go-btn">Открыть</a>
+                    <button class="delete-btn">Удалить</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>Цифровая живопись</h3>
+                <p>Категория: Digital</p>
+                <label>
+                    <input type="checkbox" class="complete">
+                    Пройдено
+                </label>
+                <div class="course-buttons">
+                    <a href="https://youtube.com" target="_blank" class="go-btn">Открыть</a>
+                    <button class="delete-btn">Удалить</button>
+                </div>  
+            </div>
+
+            <div class="course-card">
+
+                <h3>Анатомия для художников</h3>
+                <p>Категория: Персонажи</p>
+
+                <label>
+                    <input type="checkbox" class="complete">
+                    Пройдено
+                </label>
+
+                <div class="course-buttons">
+                    <a href="https://youtube.com" target="_blank" class="go-btn">Открыть</a>
+                    <button class="delete-btn">Удалить</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Видео-->
+    <section class="video-section">
+        <div class="video-left">
+
+            <div class="tag">Видео</div>
+                <h2>Процесс</h2>
+                <p>
+                    Смотрите, как рождаются картины.
+                    От наброска до финального штриха.
+                </p>
+            </div>
+
+            <div class="video-right">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+    </section>
+
+    <!-- Блок3 -->
+    <section class="creative">
+        <h2>Ваше Творческое Пространство</h2>
+
+        <div class="content">
+            <img src="img/creativeIMG.jpg" alt="art">
+
+            <div class="text">
+                <p>
+                    Здесь вы найдете все необходимое для развития своих художественных навыков
+                    и воплощения самых смелых замыслов.
+                </p>
+                <button class="join-btn" onclick="window.location.href='html/about.html'">
+                    Подробнее 
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Арт галерея -->
+    <section class="art-gallery">
+
+        <div class="gallery-row" id="row1">
+            <img src="img/art-gallery/art-gallery1.jpg">
+            <img src="img/art-gallery/art-gallery2.jpg">
+            <img src="img/art-gallery/art-gallery3.jpg">
+            <img src="img/art-gallery/art-gallery4.jpg">
+            <img src="img/art-gallery/art-gallery5.jpg">
+            <img src="img/art-gallery/art-gallery6.jpg">
+            <img src="img/art-gallery/art-gallery7.jpg">
+        </div>
+
+        <div class="gallery-row reverse" id="row2">
+            <img src="img/art-gallery/art-gallery8.jpg">
+            <img src="img/art-gallery/art-gallery9.webp">
+            <img src="img/art-gallery/art-gallery10.jpg">
+            <img src="img/art-gallery/art-gallery11.jpg">
+            <img src="img/art-gallery/art-gallery12.jpg">
+            <img src="img/art-gallery/art-gallery13.jpg">
+            <img src="img/art-gallery/art-gallery14.jpg">
+        </div>
+
+    </section>
+
+    <!--Курсы -->
+    <section class="pricing">
+        <h2>Тарифы</h2>
+
+        <div class="pricing-cards">
+
+            <div class="price-card">
+                <h3>Старт</h3>
+                <p class="price">0 тг</p>
+
+                <ul>
+                    <li>Базовые уроки</li>
+                    <li>Идеи</li>
+                    <li>Сообщество</li>
+                </ul>
+
+                <button class="btn">Выбрать</button>
+            </div>
+
+            <div class="price-card">
+                <h3>Профи</h3>
+                <p class="price highlight">5000 тг</p>
+
+                <ul>
+                    <li>Все уроки</li>
+                    <li>Продвинутые техники</li>
+                    <li>Личный куратор</li>
+                </ul>
+
+                <button class="btn accent">Выбрать</button>
+            </div>
+
+            <div class="price-card">
+                <h3>Мастер</h3>
+                <p class="price">9 999 тг</p>
+
+                <ul>
+                    <li>Все возможности</li>
+                    <li>Мастер-классы</li>
+                    <li>Поддержка</li>
+                </ul>
+
+                <button class="btn">Выбрать</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Вопрос-ответ -->
+    <section class="faqsec">
+        <div class="faq">
+
+            <div class="faq-title">Вопросы и Ответы</div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Как начать рисовать?
+                    <span class="faq-btn">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Начните с простых форм, рисуйте каждый день и не бойтесь ошибок.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Где брать идеи?
+                    <span class="faq-btn">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Идеи можно брать из природы, фильмов, книг, интернета и собственной жизни.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Нужны ли дорогие материалы?
+                    <span class="faq-btn">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Нет, достаточно обычного карандаша и бумаги.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Как улучшить свои навыки?
+                    <span class="faq-btn">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Практикуйтесь регулярно и изучайте работы других художников.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Можно ли продавать свои работы?
+                    <span class="faq-btn">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Да, через соцсети, маркетплейсы и личные заказы.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Что делать, если нет вдохновения?
+                    <span class="faq-btn">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Попробуйте сменить стиль, сделать перерыв или посмотреть работы других художников.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+        <h3>Art Zone</h3>
+        <p>Твори, вдохновляйся и делись своим искусством!</p>
+        </div>
+        <div class="footer-center">
+        <h4>Навигация</h4>
+        <a href="index.html">Главная</a>
+        <a href="html/about.html">О нас</a>
+        <a href="html/tutorial.html">Туториалы</a>
+        <a href="html/art.html">Рисование</a>
+        </div>
+        <div class="footer-right">
+        <h4>Мы в соцсетях</h4>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">VK</a>
+        <a href="#" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Art Zone. Все права защищены.
+    </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+
+</body>
+</html>

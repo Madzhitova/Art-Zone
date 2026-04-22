@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Добавить курс | Art Zone</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!--Навигация-->
+    <header>
+        <div class="logo">
+            <img id="logoimg" src="../img/logo.png">
+            <span>Art Zone</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="tutorial.html">Туториалы</a>
+            <a href="art.html">Рисование</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Форма -->
+    <section class="creative" style="padding:50px 10%;">
+        <h2>Добавить новый курс</h2>
+        <form id="courseForm" style="max-width:500px; margin-top:30px;">
+            <label for="title">Название курса:</label><br>
+            <input type="text" id="title" name="title" placeholder="Введите название" style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;"><br>
+
+            <label for="category">Категория:</label><br>
+            <input type="text" id="category" name="category" placeholder="Например: Digital" style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;"><br>
+
+            <label for="link">Ссылка на курс:</label><br>
+            <input type="text" id="link" name="link" placeholder="https://..." style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;"><br>
+
+            <div style="margin-top:20px;">
+                <button type="submit" class="btn" style="margin-right:15px;">Сохранить</button>
+                <button type="button" class="btn" onclick="location.href='index.html'" style="background:#7c5cff;">Отмена</button>
+            </div>
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+        <h3>Art Zone</h3>
+        <p>Твори, вдохновляйся и делись своим искусством!</p>
+        </div>
+        <div class="footer-center">
+        <h4>Навигация</h4>
+        <a href="../index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="tutorial.html">Туториалы</a>
+        <a href="art.html">Рисование</a>
+        </div>
+        <div class="footer-right">
+        <h4>Мы в соцсетях</h4>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">VK</a>
+        <a href="#" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Art Zone. Все права защищены.
+    </div>
+    </footer>
+    <script src="../js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Добавить</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--Навигация-->
+    <header>
+        <div class="logo">
+            <img id="logoimg" src="../img/logo.png">
+            <span>Art Zone</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="tutorial.html">Туториалы</a>
+            <a href="art.html">Рисование</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+<div class="container">
+
+    <h1>Добавить новый курс</h1>
+
+    <div class="form">
+
+        <label>Название курса:</label>
+        <input id="title" placeholder="Введите название">
+
+        <label>Категория:</label>
+        <input id="category" placeholder="Например: Digital">
+
+        <label>Фото:</label>
+        <input type="file" id="image" accept="image/*">
+
+        <label>Видео:</label>
+        <input type="file" id="video" accept="video/*">
+
+        <label>Описание:</label>
+        <textarea id="text" placeholder="Описание"></textarea>
+
+        <div class="buttons">
+            <button class="save" onclick="save()">Сохранить</button>
+            <button class="cancel" onclick="goBack()">Отмена</button>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="../js/add.js"></script>
+
+    <!--footer-->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+        <h3>Art Zone</h3>
+        <p>Твори, вдохновляйся и делись своим искусством!</p>
+        </div>
+        <div class="footer-center">
+        <h4>Навигация</h4>
+        <a href="../index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="tutorial.html">Туториалы</a>
+        <a href="art.html">Рисование</a>
+        </div>
+        <div class="footer-right">
+        <h4>Мы в соцсетях</h4>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">VK</a>
+        <a href="#" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Art Zone. Все права защищены.
+    </div>
+    </footer>
+</body>
+</html>
